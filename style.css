@@ -1,0 +1,223 @@
+
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        height: 400px;
+        width: 800px;
+        border: 2px solid rgb(124, 186, 234);
+        position: relative;
+        background-color: black;
+        color: white;
+      }
+
+      .head {
+        position: absolute;
+        width: 100%;
+
+        height: 100px;
+        display: flex;
+        background-color: black;
+        color: white;
+        justify-content: space-around;
+      }
+      .head h1 {
+        font-size: 3.3rem;
+      }
+
+      .on-off {
+        height: 40px;
+        width: 100px;
+        background-color: gray;
+        border-radius: 100px;
+        position: relative;
+        margin: 20px;
+        cursor: pointer;
+      }
+
+      .circle {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        margin: 3px 4px;
+        background-color: black;
+      }
+      .volume {
+        margin: 20px;
+        height: 50px;
+        width: 250px;
+        background-color: gray;
+        font-size: 1.2rem;
+        color: black;
+        border-radius: 10px;
+      }
+      .volume p {
+        font-size: 1.5rem;
+        color: black;
+        margin-left: 10px;
+      }
+      .volume input {
+        margin: 0px;
+        width: 200px;
+        margin-left: 10px;
+        background-color: black;
+        cursor: pointer;
+      }
+      .on-lights {
+        background-color: rgb(113, 101, 101);
+      }
+
+      .on {
+        position: absolute;
+        right: 2%;
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        margin: 3px 2px;
+        background-color: white;
+      }
+
+      .keys {
+        position: relative;
+        top: 10%;
+      }
+
+      .white {
+        height: 200px;
+        width: 60px;
+        border: 2px solid rgb(186, 186, 211);
+        border-radius: 5px;
+        z-index: 0;
+        background-color: white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+
+      .black {
+        border-radius: 0 0 5px 5px;
+        height: 150px;
+        width: 40px;
+        color: white;
+        margin: 0 -22px 0 -22px;
+        background-color: rgb(56, 52, 52);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+      .black:hover {
+        background-color: rgb(141, 139, 139);
+      }
+      .white:hover {
+        background-color: rgb(194, 177, 177);
+      }
+      .flex-container {
+        height: 250px;
+        width: 100%;
+        border: 2px solid white;
+        position: absolute;
+        top: 25%;
+        display: flex;
+        padding-left: 10%;
+      }
+      .automatic {
+        height: 40px;
+        width: 300px;
+        background-color: red;
+        position: absolute;
+        bottom: 0%;
+        border: 2px solid white;
+        margin-left: 30%;
+        text-align: center;
+        font-size: 1.3rem;
+        color: white;
+      }
+      .automatic:focus {
+        background-color: rgb(118, 217, 68);
+        color: black;
+      }
+      @media (max-width: 490px) {
+        .container {
+          height: 700px;
+          width: 400px;
+          border: 2px solid rgb(124, 186, 234);
+          position: relative;
+          background-color: rgb(34, 30, 30);
+          color: white;
+        }
+
+        .head {
+          position: absolute;
+          width: 100%x;
+          top: 50px;
+          height: 30px;
+          display: flex;
+          background-color: black;
+          color: white;
+          justify-content: space-around;
+        }
+        .head h1 {
+          margin-top: 20px;
+          font-size: 1.8rem;
+        }
+        .volume {
+          margin: 20px;
+
+          height: 50px;
+        }
+        .volume p {
+          font-size: 1rem;
+        }
+        .volume input {
+          width: 100px;
+        }
+        .on-off {
+          height: 40px;
+          width: 100px;
+          background-color: gray;
+          border-radius: 100px;
+          position: relative;
+          cursor: pointer;
+        }
+        .flex-container {
+          right: 0px;
+        }
+        .black {
+          border-radius: 0 0 5px 5px;
+          height: 150px;
+          width: 40px;
+          color: white;
+          margin: 0 -19px 0 -22px;
+          background-color: rgb(56, 52, 52);
+          z-index: 1;
+          display: flex;
+          justify-content: center;
+          align-items: end;
+        }
+        .automatic {
+          height: 100px;
+          width: 200px;
+         
+          background-color: red;
+          position: absolute;
+          bottom: 10%;
+          border: 2px solid white;
+          margin-left: 25%;
+           
+          text-align: center;
+          font-size: 1.3rem;
+          color: white;
+        }
+      }
+    
